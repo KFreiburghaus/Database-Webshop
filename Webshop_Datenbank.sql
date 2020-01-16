@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Erstellungszeit: 14. Jan 2020 um 21:29
+-- Erstellungszeit: 16. Jan 2020 um 22:41
 -- Server-Version: 10.4.8-MariaDB
 -- PHP-Version: 7.1.32
 
@@ -102,8 +102,9 @@ INSERT INTO `Bestellungen` (`BestellID`, `AuftragsNummer`, `ArtikelID`, `KundenI
 (7, 1002, 9, 4, 2, '2020-01-13 14:45:24', NULL),
 (8, 1002, 2, 4, 2, '2020-01-13 14:45:24', NULL),
 (9, 1003, 1, 3, 2, '2020-01-13 14:47:33', 7),
-(10, 1003, 2, 3, 2, '2020-01-13 14:47:33', NULL),
-(11, 1004, 7, 4, 1, '2020-01-14 08:19:27', NULL);
+(10, 1003, 2, 1, 2, '2020-01-13 14:47:33', NULL),
+(11, 1004, 7, 4, 1, '2020-01-14 08:19:27', NULL),
+(13, 1005, 2, 3, 3, '2020-01-16 19:48:49', NULL);
 
 -- --------------------------------------------------------
 
@@ -269,7 +270,7 @@ ALTER TABLE `Bestellstatus`
 -- AUTO_INCREMENT für Tabelle `Bestellungen`
 --
 ALTER TABLE `Bestellungen`
-  MODIFY `BestellID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `BestellID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT für Tabelle `Oberkategorie`
