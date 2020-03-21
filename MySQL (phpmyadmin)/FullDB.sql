@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.1
+-- version 4.9.0.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Erstellungszeit: 18. Jan 2020 um 12:33
--- Server-Version: 10.4.8-MariaDB
--- PHP-Version: 7.1.32
+-- Host: localhost:3306
+-- Erstellungszeit: 21. Jan 2020 um 11:11
+-- Server-Version: 5.7.28-0ubuntu0.16.04.2
+-- PHP-Version: 7.1.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,7 +19,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Datenbank: `Webshop_Datenbank`
+-- Datenbank: `Webshop`
 --
 
 -- --------------------------------------------------------
@@ -83,8 +83,8 @@ CREATE TABLE `Bestellungen` (
   `AuftragsNummer` int(11) NOT NULL,
   `ArtikelID` int(11) NOT NULL,
   `KundenID` int(11) NOT NULL,
-  `BestellstatusID` int(11) NOT NULL DEFAULT 1,
-  `BestellZeitpunkt` timestamp NOT NULL DEFAULT current_timestamp(),
+  `BestellstatusID` int(11) NOT NULL DEFAULT '1',
+  `BestellZeitpunkt` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `Bewertung` int(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
